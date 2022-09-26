@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: grid;
+    grid-template: 10vh 50vh 1fr/1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav nav nav nav" "logo animaisSelecao animaisSelecao animaisSelecao" "noticias dicas none local";
+    gap: 5vh;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: brown;
+    position: sticky;
+    top: 0px;
+}
+
+.login {
+    right: 5px;
+}
+
+.cadastro {
+    right: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 50px 0 0;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+header button {
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: yellow;
+}
+
+header a:hover {
+    color: coral;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.logo {
+    margin-left: 20px;
+    grid-area: logo;
+    background-color: aqua;
+}
+
+.animaisSelecao {
+    margin-right: 20px;
+    grid-area: animaisSelecao;
+    background-color: chocolate;
+}
+
+.noticias {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    grid-area: noticias;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.noticiasBox {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr;
+    grid-template-areas: "n1" "n2" "n3";
+    grid-gap: 5px;
+    padding: 0 20px;
+}
+
+.noticia1 {
+    grid-area: n1;
+    background-color: gray;
+}
+
+.noticia2 {
+    grid-area: n2;
+    background-color: gray;
+}
+
+.noticia3 {
+    grid-area: n3;
+    background-color: gray;
+}
+
+.noticia1,
+.noticia2,
+.noticia3 {
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.dicas {
+    margin-bottom: 20px;
+    grid-area: dicas;
+    background-color: tomato;
+    text-align: center;
+}
+
+.dicasBox {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr;
+    grid-template-areas: "d1" "d2" "d3";
+    grid-gap: 5px;
+    padding: 0 20px;
+}
+
+.dica1 {
+    grid-area: d1;
+    background-color: gray;
+}
+
+.dica2 {
+    grid-area: d2;
+    background-color: gray;
+}
+
+.dica3 {
+    grid-area: d3;
+    background-color: gray;
+}
+
+.dica1,
+.dica2,
+.dica3 {
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.local {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    grid-area: local;
+    background-color: thistle;
+}
+
+.local article {
+    margin-top: 50vh;
+    margin-left: 10vh;
+}
