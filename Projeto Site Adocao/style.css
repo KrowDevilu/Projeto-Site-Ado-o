@@ -6,41 +6,31 @@ body {
 
 .box {
     display: grid;
-    grid-template: 10vh 50vh 1fr/1fr 1fr 1fr 1fr;
-    grid-template-areas: "nav nav nav nav" "logo animaisSelecao animaisSelecao animaisSelecao" "noticias dicas none local";
-    gap: 5vh;
-}
-
-.nav {
-    grid-area: nav;
-    background-color: brown;
-    position: sticky;
-    top: 0px;
-}
-
-.login {
-    right: 5px;
-}
-
-.cadastro {
-    right: 0px;
+    grid-template: 10vh 40vh 1fr/3fr 3fr 1fr 1fr;
+    grid-template-areas: "nav nav nav aside" "logo animaisSelecao animaisSelecao animaisSelecao" "noticias dicas none local";
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px 50px 0 0;
+    grid-area: nav;
+    background-color: brown;
+    position: sticky;
+}
+header ul{
+    text-align: left;
 }
 
-header a {
+header ul li{
+    display: inline;
+    text-align: center;
+
+}
+header ul li a {
     text-decoration: none;
-    color: white;
-    font-size: larger;
+    font-size: 20px;
+    padding: 20px;
+    
 }
-
 header button {
-    font-size: large;
     border: none;
     border-radius: 5px;
 }
@@ -48,34 +38,39 @@ header button {
 header button:hover {
     background-color: yellow;
 }
-
+.box aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: aside;
+    background-color: green;
+}
+.box aside button{
+    margin: 50px;
+}
 header a:hover {
     color: coral;
 }
-
-.nav li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
 .logo {
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: logo;
     background-color: aqua;
 }
 
 .animaisSelecao {
-    margin-right: 20px;
     grid-area: animaisSelecao;
     background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .noticias {
-    margin-bottom: 20px;
-    margin-left: 20px;
     grid-area: noticias;
     background-color: blueviolet;
-    text-align: center;
+    text-align: left;
 }
 
 .noticiasBox {
@@ -84,58 +79,56 @@ header a:hover {
     grid-template-areas: "n1" "n2" "n3";
     grid-gap: 5px;
     padding: 0 20px;
+
 }
 
 .noticia1 {
     grid-area: n1;
-    background-color: gray;
+    text-align: left;
 }
 
 .noticia2 {
     grid-area: n2;
-    background-color: gray;
+    text-align: left;
 }
 
 .noticia3 {
     grid-area: n3;
-    background-color: gray;
+    text-align: left;
 }
 
 .noticia1,
 .noticia2,
 .noticia3 {
     border-radius: 20px;
-    padding: 0 20px;
 }
 
 .dicas {
-    margin-bottom: 20px;
     grid-area: dicas;
     background-color: tomato;
-    text-align: center;
+    text-align: left;
 }
 
 .dicasBox {
     display: grid;
     grid-template: 1fr 1fr 1fr/1fr;
     grid-template-areas: "d1" "d2" "d3";
-    grid-gap: 5px;
     padding: 0 20px;
 }
 
 .dica1 {
     grid-area: d1;
-    background-color: gray;
+    text-align: left;
 }
 
 .dica2 {
     grid-area: d2;
-    background-color: gray;
+    text-align: left;
 }
 
 .dica3 {
     grid-area: d3;
-    background-color: gray;
+    text-align: left;
 }
 
 .dica1,
@@ -146,13 +139,10 @@ header a:hover {
 }
 
 .local {
-    margin-right: 20px;
-    margin-bottom: 20px;
     grid-area: local;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: thistle;
 }
 
-.local article {
-    margin-top: 50vh;
-    margin-left: 10vh;
-}
