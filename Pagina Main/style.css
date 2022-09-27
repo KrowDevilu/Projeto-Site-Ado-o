@@ -6,14 +6,15 @@ body {
 
 .box {
     display: grid;
-    grid-template: 10vh 40vh 1fr/3fr 3fr 1fr 1fr;
+    grid-template: 10vh 30vh 1fr/3fr 3fr 1fr 1fr;
     grid-template-areas: "nav nav nav aside" "logo animaisSelecao animaisSelecao animaisSelecao" "noticias dicas none local";
 }
 
 header {
     grid-area: nav;
     background-color: brown;
-    position: sticky;
+    position: fixed;
+    width: 100%;
 }
 header ul{
     text-align: left;
@@ -28,7 +29,7 @@ header ul li a {
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
-    
+    color:cadetblue;
 }
 header button {
     border: none;
@@ -38,16 +39,7 @@ header button {
 header button:hover {
     background-color: yellow;
 }
-.box aside{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: aside;
-    background-color: green;
-}
-.box aside button{
-    margin: 50px;
-}
+
 header a:hover {
     color: coral;
 }
