@@ -45,18 +45,40 @@ header button {
 }
 .box2{
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: 30vh ;
     grid-template-areas: "footer main";
-    gap: 15px;
-    background-color: blueviolet;
 }
 .box2 footer{
     grid-area: footer;
     background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 .box2 main{
     grid-area: main;
     background-color:blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box2 main input{
+    border-radius: 10px;
+    width: 70%;
+    height: 15%;
+}
+.box3{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 15vh;
+    grid-template-areas: "img1" "img2";
+}
+.box3 img{
+    grid-area: img;
+    background-color: red;
 }
