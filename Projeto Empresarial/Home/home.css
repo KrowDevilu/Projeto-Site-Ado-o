@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: grid;
+    grid-template: 10vh 30vh 1fr/3fr 3fr 1fr 1fr;
+    grid-template-areas: "nav nav nav aside" "logo animaisSelecao animaisSelecao animaisSelecao" "noticias dicas none local";
+}
+
+header {
+    grid-area: nav;
+    background-color: brown;
+    position: fixed;
+    width: 100%;
+}
+header ul{
+    text-align: left;
+}
+
+header ul li{
+    display: inline;
+    text-align: center;
+
+}
+header ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    color:cadetblue;
+}
+header button {
+    border: none;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: yellow;
+}
+
+header a:hover {
+    color: coral;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: logo;
+    background-color: aqua;
+}
+
+.animaisSelecao {
+    grid-area: animaisSelecao;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noticias {
+    grid-area: noticias;
+    background-color: blueviolet;
+    text-align: left;
+}
+
+.noticiasBox {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr;
+    grid-template-areas: "n1" "n2" "n3";
+    grid-gap: 5px;
+    padding: 0 20px;
+
+}
+
+.noticia1 {
+    grid-area: n1;
+    text-align: left;
+}
+
+.noticia2 {
+    grid-area: n2;
+    text-align: left;
+}
+
+.noticia3 {
+    grid-area: n3;
+    text-align: left;
+}
+
+.noticia1,
+.noticia2,
+.noticia3 {
+    border-radius: 20px;
+}
+
+.dicas {
+    grid-area: dicas;
+    background-color: tomato;
+    text-align: left;
+}
+
+.dicasBox {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr;
+    grid-template-areas: "d1" "d2" "d3";
+    padding: 0 20px;
+}
+
+.dica1 {
+    grid-area: d1;
+    text-align: left;
+}
+
+.dica2 {
+    grid-area: d2;
+    text-align: left;
+}
+
+.dica3 {
+    grid-area: d3;
+    text-align: left;
+}
+
+.dica1,
+.dica2,
+.dica3 {
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.local {
+    grid-area: local;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: thistle;
+}
+
