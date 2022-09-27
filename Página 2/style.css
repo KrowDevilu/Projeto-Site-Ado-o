@@ -7,15 +7,15 @@ body {
 .box {
     display: grid;
     grid-template-columns:3fr 2fr;
-    grid-template-rows: 10vh 30vh 40vh 40vh ;
-    grid-template-areas: "header aside" "footer main" "section section" "section2 section2" ;
-    gap: 5px;
+    grid-template-rows:10vh 30vh 40vh 40vh ;
+    grid-template-areas: "header header" "footer main" "section section" "section2 section2" ;
 }
 
 header {
     grid-area: header;
     background-color: brown;
-    position: sticky;
+    position: fixed;
+    width: 100%;
 }
 header ul{
     text-align: left;
@@ -29,20 +29,12 @@ header ul li a {
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
+    color:cadetblue;
 }
-header button {
+header ul li button {
     border: none;
     border-radius: 5px;
-}
-.box aside{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: aside;
-    background-color: green;
-}
-.box aside button{
-    margin: 50px;
+    padding: 5px;
 }
 .box footer{
     grid-area: footer;
@@ -51,7 +43,11 @@ header button {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+}
+.box footer img{
+    background-size: cover;
+    width: 50%;
+    height: 70%;
 }
 .box main{
     grid-area: main;
@@ -82,7 +78,6 @@ header button {
 }
 .box .section2{
     grid-area: section2;
-    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
