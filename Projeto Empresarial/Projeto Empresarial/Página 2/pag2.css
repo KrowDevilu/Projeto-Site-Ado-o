@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: grid;
+    grid-template-columns:3fr 2fr;
+    grid-template-rows:10vh 30vh 40vh 40vh ;
+    grid-template-areas: "header header" "footer main" "section section" "section2 section2" ;
+}
+
+header {
+    grid-area: header;
+    background-color: brown;
+    position: fixed;
+    width: 100%;
+}
+header ul{
+    text-align: left;
+}
+
+header ul li{
+    display: inline;
+    text-align: center;
+}
+header ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    color:cadetblue;
+}
+header ul li button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.box footer{
+    grid-area: footer;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box footer img{
+    background-size: cover;
+    width: 50%;
+    height: 70%;
+}
+.box main{
+    grid-area: main;
+    background-color:blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box main input{
+    border-radius: 10px;
+    width: 70%;
+    height: 15%;
+}
+.box section{
+    grid-area: section;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.box section img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-size: cover;
+}
+.box .section2{
+    grid-area: section2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.box2{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 30vh ;
+    grid-template-areas: "aside main section" ;
+}
+.box2 main{
+    grid-area: main;
+    background-color: chartreuse;
+    display: inline;
+    text-align: left;
+}
+
+.box2 aside{
+    grid-area: aside;
+    background-color: cornflowerblue;
+}
+.box2 section{
+    grid-area: section;
+    background-color: red;
+    
+}
