@@ -6,7 +6,7 @@ body,html{
 div{
     display: grid;
     grid-template-columns: 3fr 3fr;
-    grid-template-rows: 50vh 40vh;
+    grid-template-rows: 30vh 40vh;
     grid-template-areas: "header header" "main main";
     gap: 30px;
 }
@@ -14,6 +14,7 @@ div header {
     grid-area: header;
     display: flex;
     align-items: center;
+    margin-left:30px;
 }
 div main{
     width: 400px;
