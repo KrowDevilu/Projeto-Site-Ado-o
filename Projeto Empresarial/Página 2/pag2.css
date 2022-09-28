@@ -83,3 +83,25 @@ header ul li button {
     justify-content: center;
     flex-direction: row;
 }
+.box2{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 30vh ;
+    grid-template-areas: "aside main section" ;
+}
+.box2 main{
+    grid-area: main;
+    background-color: chartreuse;
+    display: inline;
+    text-align: left;
+}
+
+.box2 aside{
+    grid-area: aside;
+    background-color: cornflowerblue;
+}
+.box2 section{
+    grid-area: section;
+    background-color: red;
+    
+}
