@@ -138,3 +138,18 @@ header a:hover {
     background-color: thistle;
 }
 
+
+.login{
+    color: black;
+    padding:2px; 
+    background-color:white;
+    border-radius:5px;
+    width:100%;
+}
+.cadastro{
+    color: black;
+    padding:2px; 
+    background-color:white;
+    border-radius:5px;
+    width:100%;
+}

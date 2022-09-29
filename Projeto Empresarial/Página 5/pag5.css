@@ -13,8 +13,9 @@ div{
 div header {
     grid-area: header;
     display: flex;
-    align-items: center;
-    margin-left: 30px;
+    align-items:flex-start;
+    justify-content: center;  
+    flex-direction: column;
 }
 div main{
     width: 400px;
@@ -56,4 +57,28 @@ div main nav{
     display: inline-block;
     text-align: left;
     grid-area: lem;
+}
+div header a{
+    margin-left: 15px;
+    padding: 5px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    transition: 2s;
+    color: black;
+}
+div header a:hover{
+    background-color: black;
+    color: aliceblue;
+}
+div header img{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
