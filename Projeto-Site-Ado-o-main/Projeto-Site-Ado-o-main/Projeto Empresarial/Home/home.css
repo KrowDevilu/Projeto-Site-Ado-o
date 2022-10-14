@@ -151,7 +151,6 @@ header a:hover {
     background-color:#faea7f;
     border-radius:5px;
     width:100%;
-    color:black;
     margin-right: 5px;
     transition: 1s;
 }
@@ -170,4 +169,8 @@ header a:hover {
 .cadastro:hover{
     background-color: #0e6bcf;
     color: white;
+}
+iframe{
+    border-radius: 15px;
+    height: 200px;
 }

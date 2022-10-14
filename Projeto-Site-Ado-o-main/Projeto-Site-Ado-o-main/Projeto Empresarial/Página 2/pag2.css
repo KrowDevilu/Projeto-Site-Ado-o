@@ -26,7 +26,6 @@ header ul{
 header ul li{
     display: inline;
     text-align: center;
-
 }
 header ul li img{
     border-radius: 15px;
@@ -39,13 +38,34 @@ header ul li a {
     font-family: 'Poppins', sans-serif;
     transition: 1s;
 }
-header button {
-    border: none;
-    border-radius: 5px;
-}
 
 header a:hover {
     color: #bb900f;
+}
+.login{
+    color: black;
+    padding:2px; 
+    background-color:#faea7f;
+    border-radius:5px;
+    width:100%;
+    margin-right: 5px;
+    transition: 1s;
+}
+.login:hover{
+    background-color: #0e6bcf;
+    color: white;
+}
+.cadastro{
+    color: black;
+    padding:2px; 
+    background-color:#faea7f;
+    border-radius:5px;
+    width:100%;
+    transition: 1s;
+}
+.cadastro:hover{
+    background-color: #0e6bcf;
+    color: white;
 }
 .box footer{
     grid-area: footer;
@@ -90,20 +110,6 @@ header a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-}
-.login{
-    color: black;
-    padding:2px; 
-    background-color:white;
-    border-radius:5px;
-    width:100%;
-}
-.cadastro{
-    color: black;
-    padding:2px; 
-    background-color:white;
-    border-radius:5px;
-    width:100%;
 }
 .box aside{
     height: 60%;
