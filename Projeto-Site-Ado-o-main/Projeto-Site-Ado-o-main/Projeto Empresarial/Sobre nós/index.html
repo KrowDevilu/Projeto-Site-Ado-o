@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
@@ -19,6 +20,22 @@
                 <li><a style="opacity:0.65; pointer-events: none;">Sobre Nós</a></li>
                 <li><a href="#Contato ">Contato</a></li>
                 <li><a style="margin-right:300px; " href="#NoticiaseDicas ">Notícias e Dicas</a></li>
+                <li>
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                          <span></span>
+                        </label>
+                    
+                        <ul class="menu__box">
+                          <li><a class="menu__item" href="#">Home</a></li>
+                          <li><a class="menu__item" href="#">Doações</a></li>
+                          <li><a class="menu__item" href="#">Sobre Nós</a></li>
+                          <li><a class="menu__item" href="#">Contato</a></li>
+                          <li><a class="menu__item" href="#">Notícias e Dicas</a></li>
+                        </ul>
+                      </div>
+                </li>
                 <li><button class="login ">Login</button></li>
                 <li>
                     <Button style="margin-left:25px; " class="cadastro ">Cadastre-se</Button>
@@ -36,6 +53,11 @@
         <div class="infos">
             <section class="missao">
                 <img src="" alt="missao">
+                <div class="tabs">
+                    <a href="#missao-selected"><div class="selected-tab"class="missao-tab">Missão</div></a>
+                    <a href="#visao-selected"><div class="visao-tab">Visão</div></a>
+                    <a href="#valores-selected"><div class="valores-tab">Valores</div></a>
+                </div>
                 <div class="border">
                     <div class="missaoText"> 
                         <h2>Missão</h2>
@@ -71,7 +93,7 @@
                 </div>
             </section>
         </div>
-
+        
 
     </div>
 </body>

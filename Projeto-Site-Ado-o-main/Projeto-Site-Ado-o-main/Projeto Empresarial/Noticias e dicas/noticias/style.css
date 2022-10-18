@@ -82,6 +82,7 @@ body {
 .tabs-select .info{
     display: flex;
     padding: 0 2em;
+    align-items: center;
 }
 .tabs-select h2{
     color: #3267A6;
@@ -90,4 +91,8 @@ body {
 .tabs-select p{
     color: #FFFFFF;
     font-size: 20px;
+}
+
+.hamburger-menu{
+    display: none;
 }

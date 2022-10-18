@@ -31,15 +31,11 @@ aside article h2{
 }
 
 .foto1 {
-    border: 1px solid rgb(43, 43, 43);
-    margin-bottom: 2em;
     grid-area: asideimg1;
     justify-self: center;
 }
 
 .foto2 {
-    border: 1px solid rgb(43, 43, 43);
-    margin-bottom: 2em;
     grid-area: asideimg2;
     justify-self: center;
 }
@@ -92,7 +88,9 @@ aside article p{
     margin-bottom: 2em;
 }
 
-
+.tabs{
+    display: none;
+}
 
 header {
     grid-area: header;
@@ -131,4 +129,8 @@ header ul li button {
 
 header ul li button:hover {
     opacity: 0.65;
+}
+
+.hamburger-menu{
+    display: none;
 }

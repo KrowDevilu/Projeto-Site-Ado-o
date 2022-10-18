@@ -3,6 +3,7 @@ header {
     background-color: brown;
     position: fixed;
     width: 100%;
+    
 }
 
 header ul {
@@ -26,7 +27,7 @@ header ul li a:hover {
     opacity: 0.65;
 }
 
-header ul li button {
+header ul li button{
     border: none;
     border-radius: 5px;
     padding: 5px;
@@ -82,6 +83,7 @@ body {
 .tabs-select .info{
     display: flex;
     padding: 0 2em;
+    align-items: center;
 }
 .tabs-select h2{
     color: #C06A3A;
@@ -90,4 +92,8 @@ body {
 .tabs-select p{
     color: #424242;
     font-size: 20px;
+}
+
+.hamburger-menu{
+    display: none;
 }
