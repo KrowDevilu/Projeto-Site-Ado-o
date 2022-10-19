@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    display: grid;
+    gap: 15px;
+    grid-template-columns:2fr;
+    grid-template-rows:10vh 5vh 120vh 5vh 15vh ;
+    grid-template-areas: "header header " "art art" "main main" "asi asi" "foot foot" ;
+    
+}
+
+header {
+    grid-area: header;
+    background-color: #0e6bcf;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+}
+header ul{
+    text-align: left;
+}
+
+header ul li{
+    display: inline;
+    text-align: center;
+
+}
+header ul li img{
+    border-radius: 15px;
+}
+header ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    color:#f0d316;
+    font-family: 'Poppins', sans-serif;
+    transition: 1s;
+}
+header button {
+    border: none;
+    border-radius: 5px;
+}
+
+header a:hover {
+    color: #bb900f;
+}
+.login{
+    color: black;
+    padding:2px; 
+    background-color:#faea7f;
+    border-radius:5px;
+    width:100%;
+    color:black;
+    margin-right: 5px;
+    transition: 1s;
+}
+.login:hover{
+    background-color: #0e6bcf;
+    color: white;
+}
+.cadastro{
+    color: black;
+    padding:2px; 
+    background-color:#faea7f;
+    border-radius:5px;
+    width:100%;
+    transition: 1s;
+}
+.cadastro:hover{
+    background-color: #0e6bcf;
+    color: white;
+}
+
+article{
+    margin-left: 15px;
+    grid-area: art;
+    font-size: 30px;
+    color: #0e6bcf;
+}
+main{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-area: main;
+    line-height: 35px;
+}
+main ul li{
+    list-style: none;
+}
+main ul li input{
+    border: 2px solid #0e6bcf;
+    border-radius: 3px;
+    width: 290%;
+    height: 30px;
+}
+aside{
+    grid-area: asi;
+    display: inline-block;
+    text-align: center;
+}
+button{
+    background-color: #0e6bcf;
+    border-radius: 5px;
+    width: 6%;
+    height: 100%;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+button:hover{
+    animation: bt 2s cubic-bezier(.39,.575,.565,1.000) both infinite ;
+}
+@keyframes bt{
+    0%,100%{transform:scale(1)}50%{transform:scale(1.3);}
+}
+footer{
+    grid-area: foot;
+    text-align:right;
+    margin-right: 15px;
+}

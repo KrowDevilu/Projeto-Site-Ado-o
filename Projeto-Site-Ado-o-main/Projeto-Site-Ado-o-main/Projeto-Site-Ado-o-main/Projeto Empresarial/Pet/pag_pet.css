@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: grid;
+    gap: 15px;
+    grid-template-columns:1.5fr 5fr 1fr;
+    grid-template-rows:11vh  0vh 60vh ;
+    grid-template-areas: "header header header"  "section2 section2 section2" "aside main2 footer2" ;
+}
+
+header {
+    grid-area: nav;
+    background-color: #0e6bcf;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+}
+header ul{
+    text-align: left;
+}
+
+header ul li{
+    display: inline;
+    text-align: center;
+
+}
+header ul li img{
+    border-radius: 15px;
+}
+header ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    color:#f0d316;
+    font-family: 'Poppins', sans-serif;
+    transition: 1s;
+}
+header button {
+    border: none;
+    border-radius: 5px;
+}
+
+header a:hover {
+    color: #bb900f;
+}
+
+.box article{
+    grid-area: main2;
+    display: inline-block;
+    text-align: left;
+}
+
+.box .aside2{
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;    
+}
+.box .aside2 img{
+    width: 100%;
+    height: 75%;
+    background-size: cover;
+}
+
+.box .aside2  p{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    color: #0e6bcf;
+}
+.box .aside2    ul{
+    display: inline;
+}
+
+.box .footer2{
+    grid-area: footer2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.box .footer2 a{
+    border-radius: 15px;
+    width: 80%;
+    height: 20%;
+    color: white;
+    background-color: #0e6bcf;
+    border: none;
+    text-decoration:none ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box article .botoes{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.box article .botoes a{
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
