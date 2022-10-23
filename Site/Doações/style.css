@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    margin-top: 6em;
+}
+
+
+.pagamento-opc {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+.pagamento-opc a {
+    text-decoration: none;
+}
+
+
+/* geral / cartão */
+
+.card-img {
+    max-width: 4em;
+}
+
+.cartao-opc,
+.pix-opc,
+.boleto-opc,
+.racao-opc {
+    border: 1px gray solid;
+    padding: 2em;
+    border-radius: 5px;
+    color: #787878;
+    display: flex;
+    height: 3em;
+}
+
+.cartao-opc img,
+.pix-opc img,
+.boleto-opc img,
+.racao-opc img {
+    padding-right: 2em;
+}
+
+.selected-opc {
+    border: 3px #3B6FD4 solid;
+    padding: 2em;
+    border-radius: 5px;
+    color: #3B6FD4;
+    display: flex;
+    font-weight: bold;
+    height: 3em;
+}
+
+.selected-opc img {
+    padding-right: 2em;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    font-size: 20px;
+    color: #4F4F4F;
+}
+
+.info-mini {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    height: 2em;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.long-input {
+    width: 25em;
+}
+
+.short-input {
+    max-width: 3em;
+}
+
+.img-cartao {
+    display: grid;
+}
+
+.img-cartao img {
+    width: 70%;
+    justify-self: end;
+}
+
+.img-cartao a {
+    justify-self: end;
+}
+
+.img-cartao button {
+    width: 9em;
+    justify-self: end;
+    height: 2em;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3B6FD4;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* página do pix */
+
+.informacoes-pix {
+    display: grid;
+    padding: 2em;
+    font-size: 20px;
+    color: #4F4F4F;
+}
+
+.pix-infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-infos {
+    border: 3px #275CAB solid;
+    border-radius: 20px;
+    padding: 0 2em;
+    width: 10em;
+}
+
+.div-infos h2 {
+    color: #275CAB;
+}
+
+.pix-gerar {
+    justify-self: center;
+    margin-top: 5em;
+}
+
+.pix-gerar button {
+    height: 2em;
+    width: 15em;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3B6FD4;
+    color: white;
+}
+
+
+/* Pagina do boleto */
+
+.informacoes-boleto {
+    display: grid;
+    padding: 2em;
+    font-size: 20px;
+    color: #4F4F4F;
+    justify-content: center;
+}
+
+.cpf {
+    text-align: center;
+}
+
+.btn-confirmar {
+    margin-top: 2em;
+    justify-self: center;
+}
+
+.btn-confirmar button {
+    width: 9em;
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    background-color: #3B6FD4;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* página da ração */
+
+.informacoes-racao {
+    display: grid;
+    padding: 2em;
+    font-size: 20px;
+    color: #4F4F4F;
+    justify-content: center;
+}
+
+.informacoes-racao div {
+    width: 25em;
+}
+
+
+/*pagina final*/
+
+.informacoes-doacao {
+    display: grid;
+    padding: 2em;
+    font-size: 20px;
+    color: #4F4F4F;
+    justify-content: center;
+}
+
+@media screen and (max-width:480px){
+    .content{
+        display: block;
+    }
+    .pagamento-opc{
+        display: grid;
+        grid-template: 1fr 1fr/ 1fr 1fr;
+        max-width: 480px;
+        margin: 1em;
+    }
+    .cartao-opc,
+    .pix-opc,
+    .boleto-opc,
+    .racao-opc {
+        width: 180px;
+        padding: 1em;
+        height: 3em;
+        font-size: 20px;
+    }
+    
+    .cartao-opc img,
+    .pix-opc img,
+    .boleto-opc img,
+    .racao-opc img {
+        padding-right: 1em;
+    }
+    
+    .selected-opc {
+        font-size: 20px;
+        width: 180px;
+        padding: 1em;
+        height: 3em;
+    }
+    
+.selected-opc img {
+    padding-right: 1em;
+}
+
+.informacoes {
+    display: block;
+    padding: 0.5em;
+    font-size: 25px;
+    max-width: 480px;
+}
+
+input {
+    font-size: 20px;
+    height: 2em;
+}
+
+.long-input {
+    width: 100%;
+}
+
+.short-input {
+    max-width: 5em;
+    text-align: center;
+}
+.img-cartao{
+    margin-top: 2em;
+    text-align: center;
+}
+.img-cartao img {
+    width: 80%;
+    justify-self: center;
+}
+
+.img-cartao a {
+    margin-top: 1em;
+    justify-self: center;
+}
+
+.img-cartao button {
+    font-size: 30px;
+    width: 15em;
+    height: 2em;
+    border: none;
+}
+/* página do pix */
+
+.informacoes-pix {
+    display: block;
+    padding: 1em;
+    font-size: 30px;
+}
+
+.pix-infos {
+    margin-left: 0.5em;
+    display: block;
+}
+
+.div-infos {
+    padding: 0 1em;
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+.pix-gerar {
+    display: flex;
+    justify-content: center;
+    margin-top: 0em;
+}
+
+.pix-gerar button {
+    font-size: 30px;
+}
+/* página boleto */
+
+.informacoes-boleto {
+    font-size: 30px;
+    justify-content: initial;
+}
+.cpf {
+    text-align: center;
+}
+
+.btn-confirmar {
+    margin-top: 2em;
+    justify-self: center;
+}
+
+.btn-confirmar button {
+    font-size: 30px;
+}
+/* página ração */
+
+.informacoes-racao {
+    display: initial;
+    font-size: 30px;
+}
+.informacoes-racao div {
+    margin-left: 0.5em;
+    width: 80%;
+}
+
+/*pagina final*/
+
+.informacoes-doacao {
+    font-size: 30px;
+}
+}

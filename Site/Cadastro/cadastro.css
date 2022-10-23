@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    margin-top:4em;
+}
+
+article {
+    font-size: 30px;
+    color: #0e6bcf;
+}
+
+main {
+    margin-left: 2em;
+}
+
+main input, main select {
+    border: 2px solid #0e6bcf;
+    border-radius: 5px;
+    padding: 5px;
+    width: 98%;
+    box-sizing: border-box;
+}
+         
+.btn{
+    display: block;
+    text-align: center;
+}
+.envia {
+    background-color: #0e6bcf;
+    border-radius: 5px;
+    width: 6%;
+    height: 30px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+
+.envia:hover {
+    animation: bt 2s cubic-bezier(.39, .575, .565, 1.000) both infinite;
+}
+
+@keyframes bt {
+    0%,
+    100% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}
+@media screen and (max-width:480px){
+    .box{
+        margin-top: 6em;
+    }
+    article{
+        font-size: 50px;
+    }
+    main{
+        font-size: 20px;
+    }
+    main input, main select {
+        width: 92%;
+        font-size: 20px;
+    }
+    .envia{
+        font-size: 25px;
+        height: 60px;
+        width: 18%;
+    }
+}

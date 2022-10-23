@@ -1,0 +1,80 @@
+@media screen and (max-width:480px){
+   .box{
+      display: block;
+    }
+    aside {
+      margin-left: 0px;
+      height: 50%;
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+    aside img{
+      text-align: center;
+    }
+    aside article {
+    margin: 0 25px;
+    font-size: 40px;
+    }
+    aside article h2{
+    font-size: 80px;
+    text-align: center;
+    }
+    
+    .tabs{
+        display: flex;
+        justify-content: space-between;
+        font-size: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .missao-tab, .visao-tab, .valores-tab{
+        background-color: #7DB9FF;
+        border-radius: 10px 10px 0px 0;
+        color: #004381;
+        font-weight: bolder;
+        padding: 10px;
+    }
+    .selected-tab{
+        color: #AD7766;
+        font-weight: bolder;
+        background-color: #FFEBA4;
+        padding: 10px;
+        border-radius: 10px 10px 0px 0;
+    }
+        
+    .infos {
+        display:block;
+        margin: 0 ;
+    }
+
+    .missao {
+        grid-area: missao;
+        width: 100%;
+    }
+
+    .missaoText{
+       border-width: 6px;
+        padding: 10px;
+        font-size: 40px;
+        word-break: break-all;
+        height: 100%;
+    }
+
+    .border{
+        background-color: #FFEBA4;
+        padding: 15px;
+        border-radius: 0px;
+    }
+
+    .missaoText h2,.visaoText h2,.valoresText h2{
+        display: none;
+    }
+    .visao , .valores{
+    display: none;
+    }
+
+}
