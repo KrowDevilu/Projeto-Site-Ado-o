@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    margin-top: 6em;
+    display: block;
+}
+
+.pesquisa {
+    margin-top: 2em;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisa input {
+    border-radius: 5px 0 0 5px;
+    border: 1px black solid;
+    width: 70%;
+    height: 40%;
+}
+
+.btn-pesquisar {
+    cursor: pointer;
+    margin-left: 10px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    height: 40%;
+    padding: 0 2em;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: #FFD056;
+    color: #AD7766;
+    transition: 0.5s;
+}
+
+.btn-pesquisar:hover {
+    background-color: #C07A53;
+    color: #F2D4C7;
+}
+
+.mais {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filtros {
+    justify-self: right;
+    display: grid;
+    position: sticky;
+    top: 80px;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.filtros .ama {
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    background-color: #FFD056;
+    color: #AD7766;
+    font-weight: 900;
+    border-radius: 0 20px 0 0;
+}
+
+.filtros a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.5s;
+    font-weight: 600;
+}
+
+.filtros a:hover {
+    text-decoration: none;
+    color: #FFD056;
+    transition: 1s;
+}
+
+.filtros .azul {
+    padding: 10px;
+    border-radius: 0 0 20px 0;
+    height: 130px;
+    background-color: #3B6FD4;
+}
+
+.imagens {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+.imagens img {
+    margin-right: 20px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 186px;
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        margin-top: 7em;
+    }
+    .pesquisa {
+        height: 120px;
+        width: 95%;
+        margin-left: 10px;
+    }
+    .pesquisa input {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .btn-pesquisar {
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 0 5px;
+    }
+    .mais {
+        display: block;
+    }
+    .filtros {
+        position: initial;
+        width: 100%;
+        font-size: 25px;
+    }
+    .filtros .ama {
+        font-size: 30px;
+        border-radius: 0;
+    }
+    .filtros .azul {
+        padding: 20px;
+        border-radius: 0;
+    }
+    .imagens {
+        display: block;
+        padding: 20px;
+    }
+    .imagens img {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100%;
+    }
+}
