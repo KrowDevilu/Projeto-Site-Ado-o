@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital@0;1&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    margin-top: 61px;
+    display: grid;
+    grid-template: 1fr 1fr/3fr 3fr 1fr 1fr;
+    grid-template-areas: "animaisSelecao animaisSelecao animaisSelecao animaisSelecao" "noticias dicas none local";
+    margin-bottom: 10px;
+}
+
+.animaisSelecao {
+    grid-area: animaisSelecao;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 215, 107);
+}
+
+h1 {
+    color: #777777;
+}
+
+.noticias {
+    grid-area: noticias;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.noticiasBox {
+    display: grid;
+}
+
+.noticia1 {
+    border-radius: 20px 20px 0 0;
+}
+
+.noticia3 {
+    border-radius: 0 0 20px 20px;
+}
+
+.noticia1,
+.noticia2,
+.noticia3 {
+    padding: 0 10px;
+    background-color: #7DB9FF;
+    color: #0e295a;
+    width: 100%;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.noticia1:hover,
+.noticia2:hover,
+.noticia3:hover {
+    color: white;
+    background-color: #004381;
+}
+
+.dicas {
+    grid-area: dicas;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.dicasBox {
+    display: grid;
+}
+
+.dica1 {
+    border-radius: 20px 20px 0 0;
+}
+
+.dica3 {
+    border-radius: 0 0 20px 20px;
+}
+
+.dica1,
+.dica2,
+.dica3 {
+    color: #723615;
+    padding: 0 10px;
+    background-color: #FFD37E;
+    width: 100%;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.dica1:hover,
+.dica2:hover,
+.dica3:hover {
+    color: white;
+    background-color: #C07A53;
+}
+
+.local {
+    grid-area: local;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 35px;
+    color: #0057FF;
+}
+
+.local article {
+    display: inline-block;
+    text-align: center;
+}
+
+iframe {
+    border-radius: 15px;
+    height: 200px;
+}
+
+
+/* colocar uma seção de imagens que vão passando */
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide-container {
+    display: block;
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+    transform: translate(1, 0);
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 40px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    /* cor das setinhas*/
+    font-size: 40pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Arial", sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover+.nav label {
+    opacity: 0.5;
+}
+
+.nav label:hover {
+    opacity: 1;
+}
+
+.nav .next {
+    right: 0;
+}
+
+input:checked+.slide-container .slide {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked+.slide-container .nav label {
+    display: block;
+}
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: #818181;
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: #0047FF;
+}
+
+input#img-1:checked~.nav-dots label#img-dot-1,
+input#img-2:checked~.nav-dots label#img-dot-2,
+input#img-3:checked~.nav-dots label#img-dot-3 {
+    background: #0047FF;
+    width: 30px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:480px) {
+    .box {
+        display: block;
+    }
+    .local {
+        font-size: 30px;
+    }
+    .noticias h1,
+    .dicas h1 {
+        font-size: 80px;
+    }
+    .noticiasBox,
+    .dicasBox {
+        font-size: 25px;
+        word-break: break-all;
+    }
+    .animaisSelecao {
+        width: 100%;
+        height: 100%;
+    }
+    .slide {
+        margin-top: 21px;
+        width: 100%;
+        height: 100%;
+    }
+    .slides {
+        height: 315px;
+    }
+    .slide img {
+        width: 100%;
+        height: 100%;
+    }
+    .nav label {
+        line-height: 300px;
+    }
+    .nav-dots {
+        bottom: 20px;
+    }
+    .noticias,
+    .dicas {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 90%;
+    }
+}

@@ -1,0 +1,205 @@
+/* body {
+    background-size: cover;
+    width: 100%;
+    background-image: url("seamless-dog-pattern-with-paw-prints-hearts-cat-foot-texture-pattern-with-doggy-pawprint_192280-743.webp");
+    background-size: unset;
+} */
+
+.logo {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 60px;
+    margin-left: 1em;
+}
+
+header {
+    background-color: #0e6bcf;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header ul {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    margin-left: 4em;
+}
+
+header ul li {
+    display: inline;
+    height: 100%;
+}
+
+.selected_nav {
+    pointer-events: none;
+    background-color: #1E4590;
+    color: #FFB800;
+}
+
+header ul .nav_buttons {
+    margin-left: 150px;
+}
+
+header ul li a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1em;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+}
+
+header a:hover {
+    color: #FFB800;
+    background-color: #1E4590;
+}
+
+header ul .nav_buttons button {
+    border-radius: 5px;
+    border: none;
+    padding: 0 2em;
+    height: 2em;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: #FFD056;
+    color: #AD7766;
+    transition: 0.5s;
+}
+
+header ul .nav_buttons button:hover {
+    background-color: #C07A53;
+    color: #F2D4C7;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+    .logo {
+        display: none;
+    }
+    header {
+        background-color: #3B6FD4;
+        align-items: center;
+    }
+    header ul li a {
+        display: none;
+    }
+    header ul li img {
+        display: none;
+    }
+    header ul {
+        display: flex;
+    }
+    header ul .nav_buttons button {
+        padding: 0 10px;
+        font-size: 25px;
+    }
+    header ul .nav_buttons {
+        margin-left: 4em;
+    }
+    .hamburger-menu {
+        display: initial;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    #menu__toggle:checked+.menu__btn>span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked+.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+    #menu__toggle:checked+.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked~.menu__box {
+        left: 0 !important;
+    }
+    #menu__toggle:checked~.menu_shadow {
+        display: initial !important;
+    }
+    .mob-logo {
+        width: 100%;
+    }
+    .mob-logo img {
+        width: 100%;
+    }
+    .menu__btn {
+        position: fixed;
+        top: 35px;
+        left: 20px;
+        width: 50px;
+        height: 80px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 12px;
+        background-color: #96B6F2;
+        transition-duration: .25s;
+    }
+    .menu__btn>span::before {
+        content: '';
+        top: -16px;
+    }
+    .menu__btn>span::after {
+        content: '';
+        top: 16px;
+    }
+    .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 550px;
+        margin: 0;
+        padding: 80px 0;
+        border-radius: 0 0 20px 0;
+        list-style: none;
+        background-color: #FFD37E;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+        z-index: 2;
+    }
+    .menu_shadow {
+        opacity: 0.5;
+        display: none;
+        top: 0;
+        left: 0;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        z-index: 1;
+    }
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #A8735D;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+    }
+    .menu__item:hover {
+        background-color: #C07A53;
+        color: #F2D4C7;
+    }
+}

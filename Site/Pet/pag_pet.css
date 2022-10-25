@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    margin-top: 8em;
+    margin-left: 2em;
+    margin-right: 2em;
+    display: grid;
+    display: flex;
+}
+
+article {
+    text-align: center;
+    margin-right: 5em;
+}
+
+aside img {
+    width: 450px;
+    height: 281px;
+}
+
+.pet-infos {
+    background-color: #FFE08F;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    padding: 0;
+}
+
+.aside2 {
+    margin-right: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.box .aside2 p {
+    text-align: center;
+    font-size: 30px;
+    color: #3485FF;
+    font-weight: 900;
+}
+
+.mais {
+    display: grid;
+    grid-template: 1fr 100px/ 1fr 1fr 1fr 1fr;
+    grid-template-areas: "article article article article" "none none none btn";
+}
+
+.mais article {
+    grid-area: article;
+}
+
+.mais article p {
+    font-size: 20px;
+}
+
+.btn-voltar {
+    grid-area: btn;
+    margin-top: 2em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0e6bcf;
+    border: none;
+    transition: 0.5s;
+}
+
+.btn-voltar:hover {
+    background-color: #FFD056;
+    color: #AD7766;
+}
+
+.box article .botoes {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+
+.box article .botoes a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-doar {
+    background-color: #FFD15B;
+    color: #AD7766;
+    transition: all 0.5s;
+}
+
+.btn-adotar {
+    background-color: #5BB0FF;
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+
+.btn-doar:hover {
+    background-color: #C07A53;
+    color: #F2D4C7;
+}
+
+.btn-adotar:hover {
+    background-color: #004381;
+    color: #7abfff;
+}
+
+@media screen and (max-width:480px) {
+    .box {
+        display: block;
+    }
+    .aside2 {
+        position: absolute;
+        top: 140px;
+        left: 5px;
+        width: 90%;
+    }
+    .aside2 img {
+        width: 100%;
+        height: 100%;
+    }
+    .pet-infos {
+        background-color: #FFE08F;
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        padding: 0;
+    }
+    .aside2 {
+        font-size: 30px;
+    }
+    .box .aside2 p {
+        font-size: 40px;
+    }
+    .mais {
+        grid-template-areas: "article article article article" "btn btn btn btn";
+    }
+    .mais article {
+        width: 100%;
+        margin-top: 32em;
+        grid-area: article;
+    }
+    .mais article p {
+        word-break: break-all;
+        text-align: left;
+        font-size: 30px;
+    }
+    
+.box article .botoes {
+    width: 100%;
+    display: flex;
+}
+
+}

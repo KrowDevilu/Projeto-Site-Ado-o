@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital@0;1&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+    grid-row: 10vh 10vh 10vh 10vh ;
+
+    grid-template-areas:
+                         "contato contato contato" 
+                         "redes redes redes"
+                         "email email email"
+                         "telefone telefone telefone";
+                         grid-gap: 10px;
+   
+                   
+}
+
+.contato{
+
+    grid-area: contato; 
+    color:#0e6bcf;
+    display: block;
+    align-items: left;
+    margin-left: 40px;
+    font-size: 35px;
+    margin-top: 100px;
+    
+}
+
+
+
+.redes{
+grid-area: redes;
+display: flex;
+margin-top: 50px;
+justify-content: space-between;
+margin-right: 20px;
+margin-left: 20px;
+
+}
+
+.email{
+
+    grid-area: email;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+}
+
+.telefones{
+
+    grid-area: telefone;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+margin-bottom: 10em;
+}
+
+
+.email h2 {
+
+    font-size: 20px;
+    color: #0e6bcf;
+
+}
+
+h2{
+    font-size: 30px;
+    color: #0e6bcf;
+}
+
+.bordagrid{
+
+    border: 10px black;
+
+}
+
+.logopng{
+   
+    height: 75px;
+    width: 75px;
+}
+
+footer{
+    height: 3em;
+    width: 100%;
+    background-color:#0e6bcf;
+    position: relative;
+    bottom: -20px;
+}
+
+.blocoredes{
+
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #faea7f;;
+
+  
+}
+
+.boxmail{
+
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    background-color: #faea7f;
+
+}   
+
+.redes p {
+
+font-size: 20px;
+font-weight:bold ;
+}
+
+
+.blocoredes div p{
+margin-left: 15px;
+
+}
+
+.blocoredes div{
+
+    align-items: center;
+    display: flex;
+}
+
+.email p {
+
+    font-size: 20px;
+    font-weight:bold ;
+    }
+    
+.email h2 {
+
+    font-size: 30px;
+}
+
+
+.boxtel{
+
+    
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    background-color: #faea7f;
+    margin-bottom: 10px;
+
+
+}
+
+.telefones p {
+
+    margin-left: 20px;
+}
+
+@media screen and (max-width:480px) {
+    .contato{
+    
+        grid-area: contato; 
+        color:#0e6bcf;
+        display: initial;
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+.redes{
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    }
+    
+    
+.blocoredes{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #faea7f;  
+}
+.blocoredes div{
+    justify-content: center;
+    display: block;
+}
+.blocoredes div p{
+    margin-left: 0;
+}
+.email{
+    display: block;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left:0;
+    width: 100%;
+    text-align: center;
+}
+.boxmail{
+    display: block;
+    width: 100%;
+    height: 150px;
+}   
+.telefones{
+    text-align: center;
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+}
+.boxtel{
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+.boxtel img{
+    margin-top: 20px;
+}
+}
